@@ -42,7 +42,7 @@ async function replaceInFile_RegEx(originalFile, r, t) {
 }
 
 await replaceInFile('vs/code/browser/workbench/workbench.html', {
-	"{{WORKBENCH_WEB_BASE_URL}}/out/vs/code/browser/workbench/workbench.js": "/_/C/local/VSCode/vs/code/browser/workbench/workbench.js",
+	"{{WORKBENCH_WEB_BASE_URL}}/out/vs/code/browser/workbench/workbench.js": "/_/C/local/VSCode/workbench.js",
 	"{{WORKBENCH_WEB_BASE_URL}}/out": "{{WORKBENCH_WEB_BASE_URL}}",
 	"{{WORKBENCH_AUTH_SESSION}}": "",
 	"{{WORKBENCH_WEB_CONFIGURATION}}": workBenchSettings,
@@ -98,7 +98,7 @@ await fs.cp('./build/win96/src/prebuilt', './out-w96/prebuilt', {
 });
 
 try {
-	execSync("tsc ./build/win96/src/workbench.ins.ts --outDir ./out-w96/ --skipLibCheck --noEmitOnError false --module esnext --target es2020", { stdio: "inherit" });
+	execSync("tsc ./build/win96/src/workbench.ts --outDir ./out-w96/ --skipLibCheck --noEmitOnError false --module esnext --target es2020", { stdio: "inherit" });
 } catch (error) {
 	void (error);
 }
