@@ -28,7 +28,7 @@
 	],
 	"exclude": [
 		"node_modules/**",
-		"build/win96/src/*",
+		"build/win96/src/W96.d.ts",
 		"build/win96/src/WRT.d.ts"
 	]
 }
