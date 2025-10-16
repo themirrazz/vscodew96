@@ -42,7 +42,7 @@ async function replaceInFile_RegEx(originalFile, r, t) {
 }
 
 await replaceInFile('vs/code/browser/workbench/workbench.html', {
-	"{{WORKBENCH_WEB_BASE_URL}}/out/vs/code/browser/workbench/workbench.js": "/_/C/local/VSCode/workbench.ins.js",
+	"{{WORKBENCH_WEB_BASE_URL}}/out/vs/code/browser/workbench/workbench.js": "/_/C/local/VSCode/vs/code/browser/workbench/workbench.js",
 	"{{WORKBENCH_WEB_BASE_URL}}/out": "{{WORKBENCH_WEB_BASE_URL}}",
 	"{{WORKBENCH_AUTH_SESSION}}": "",
 	"{{WORKBENCH_WEB_CONFIGURATION}}": workBenchSettings,
