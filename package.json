@@ -3,7 +3,7 @@
   "version": "1.106.0",
   "distro": "cf7a6d44d8299723d955936df569ea424e6b68fd",
   "author": {
-    "name": "Microsoft Corporation"
+    "name": "themirrazz"
   },
   "license": "MIT",
   "main": "./out/main.js",
@@ -68,7 +68,9 @@
     "extensions-ci": "node ./node_modules/gulp/bin/gulp.js extensions-ci",
     "extensions-ci-pr": "node ./node_modules/gulp/bin/gulp.js extensions-ci-pr",
     "perf": "node scripts/code-perf.js",
-    "update-build-ts-version": "npm install -D typescript@next && npm install -D @typescript/native-preview && (cd build && npm run compile)"
+    "update-build-ts-version": "npm install -D typescript@next && npm install -D @typescript/native-preview && (cd build && npm run compile)",
+    "prep": ".\\scripts\\prep96.bat",
+    "build": ".\\scripts\\build96.bat"
   },
   "dependencies": {
     "@microsoft/1ds-core-js": "^3.2.13",
