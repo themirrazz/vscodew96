@@ -1,3 +1,2 @@
-node run minify-vscode-reh-web
-mkdir ".\out-w96";
-node .\build\w96\package.js
+npm run minify-vscode-reh-web
+node .\build\win96\package.mjs

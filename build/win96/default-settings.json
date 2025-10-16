@@ -1,0 +1,12 @@
+{
+    "remoteAuthority": null,
+    "serverBasePath": "/",
+    "developmentOptions": {
+        "logLevel": 3
+    },
+    "enableWorkspaceTrust": true,
+    "productConfiguration": {
+        "embedderIdentifier": "browser-only"
+    },
+    "callbackRoute": "/oss-dev/callback"
+}

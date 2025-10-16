@@ -1,2 +1,2 @@
 rename ".\out" "out-build"
-node .\build\w96\mkdate.js
+node .\build\win96\mkdate.mjs
